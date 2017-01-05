@@ -15,5 +15,9 @@ function config($routeProvider,$locationProvider){
     .when('/contact',{
         templateUrl: 'views/contact.html',
         controller:'contactCtrl'
+    })
+    .when('/uploadpic',{
+        templateUrl: 'views/upload.html',
+        controller:'uploadCtrl'
     });
 };

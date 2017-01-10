@@ -1,3 +1,13 @@
-app.controller('homeCtrl',function($scope) {
-    $scope.abc = 12;
+app.controller('homeCtrl',function($scope,$http) {
+    $scope.userdata=[];
+    $scope.getData = function(){
+        $http({
+            method: 'GET',
+            url: '/about'
+            }).then(function successF(response) {
+                $scope.userdata = response.data;
+            }, function errorF(response) {
+                
+            });
+    }
 })

@@ -1,72 +1,14 @@
 <h1>home</h1>
+<button type="button" ng-click="getData()">click</button>
 <div class="container">
-	<ul style="">
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				asdflkj<br>safsadf
+	<ul >
+		<li class="liimg" ng-repeat="data in userdata">
+			
+			<span id="{{data.id}}">
+				<a href="#"><img  class="boximg" src="{{data.profilepic}}"></a>
+				<span style="display:block">{{data.name}}</span>
 			</span>
 
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf<br>sdf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
-		</li>
-		<li class="liimg">
-			<span class="libox">
-				<a href="#"><img  class="boximg" src="https://sanjeetstorage.blob.core.windows.net/imgs/Newfolder/Untitled.png"></a>
-				sduaf
-			</span>
 		</li>
 
 	</ul>

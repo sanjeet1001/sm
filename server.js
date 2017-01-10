@@ -50,7 +50,7 @@ var config = {
     user: 'sanjeet',
     password: '@Aa12345',
     server: 'sanjeettodo.database.windows.net',
-    database: 'todo',
+    database: 'app1',
 
     options: {
         encrypt: true
@@ -72,7 +72,7 @@ app.get('/about',function(req,res){
     // Query
 
     new sql.Request()
-    .query('select * from battles').then(function(recordset) {
+    .query('select * from users').then(function(recordset) {
         res.json(recordset);
     }).catch(function(err) {
         res.send(err);
